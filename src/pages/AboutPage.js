@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiTarget, FiHeart, FiStar, FiUsers, FiArrowRight } from 'react-icons/fi';
+import { FiTarget, FiStar, FiArrowRight } from 'react-icons/fi';
 
 export default function AboutPage() {
   const team = [

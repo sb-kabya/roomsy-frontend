@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { authAPI } from '../services/api';
 import toast from 'react-hot-toast';
 import { FiMail, FiLock, FiUser, FiEye, FiEyeOff, FiArrowRight, FiCheck } from 'react-icons/fi';
 
 export default function RegisterPage() {
-  const navigate = useNavigate();
   const [form, setForm] = useState({ email: '', username: '', first_name: '', last_name: '', password: '', re_password: '' });
   const [showPass, setShowPass] = useState(false);
   const [loading, setLoading] = useState(false);

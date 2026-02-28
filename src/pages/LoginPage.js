@@ -52,7 +52,7 @@ export default function LoginPage() {
             <div>
               <div className="flex justify-between items-center mb-2">
                 <label className="text-sm font-medium text-gray-700">Password</label>
-                <a href="#" className="text-sm text-blue-600 hover:text-blue-700">Forgot password?</a>
+                <a href="/#" className="text-sm text-blue-600 hover:text-blue-700">Forgot password?</a>
               </div>
               <div className="relative">
                 <FiLock size={17} className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />

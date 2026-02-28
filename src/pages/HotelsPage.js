@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { hotelAPI } from '../services/api';
-import { FiSearch, FiMapPin, FiStar, FiFilter, FiArrowRight, FiX } from 'react-icons/fi';
+import { FiSearch, FiMapPin, FiStar, FiArrowRight, FiX } from 'react-icons/fi';
 
 const Stars = ({ rating }) => (
   <div className="flex gap-0.5">
@@ -39,7 +39,7 @@ const HotelCard = ({ hotel }) => (
 );
 
 export default function HotelsPage() {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const [hotels, setHotels] = useState([]);
   const [loading, setLoading] = useState(true);
   const [total, setTotal] = useState(0);
@@ -49,7 +49,6 @@ export default function HotelsPage() {
     star_rating: searchParams.get('star_rating') || '',
     ordering: '-star_rating',
   });
-  const [showFilters, setShowFilters] = useState(false);
 
   const fetchHotels = useCallback(() => {
     setLoading(true);

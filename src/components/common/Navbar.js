@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import toast from 'react-hot-toast';
-import { FiMenu, FiX, FiUser, FiLogOut, FiBookOpen, FiSettings, FiGrid } from 'react-icons/fi';
+import { FiMenu, FiX, FiLogOut, FiBookOpen, FiSettings, FiGrid } from 'react-icons/fi';
 
 export default function Navbar() {
   const { user, logout } = useAuth();

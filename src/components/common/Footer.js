@@ -21,7 +21,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-3">
               {[FiFacebook, FiTwitter, FiInstagram, FiLinkedin].map((Icon, i) => (
-                <a key={i} href="#" className="w-9 h-9 rounded-lg bg-white/8 flex items-center justify-center hover:bg-blue-600 transition-colors text-gray-400 hover:text-white" style={{ background: 'rgba(255,255,255,0.08)' }}>
+                <a key={i} href="/#" className="w-9 h-9 rounded-lg bg-white/8 flex items-center justify-center hover:bg-blue-600 transition-colors text-gray-400 hover:text-white" style={{ background: 'rgba(255,255,255,0.08)' }}>
                   <Icon size={16} />
                 </a>
               ))}
@@ -96,7 +96,7 @@ export default function Footer() {
           <p className="text-gray-500 text-sm">© 2026 Roomsy. All rights reserved.</p>
           <div className="flex gap-6">
             {['Privacy Policy', 'Terms of Service', 'Cookie Policy'].map(t => (
-              <a key={t} href="#" className="text-gray-500 hover:text-gray-300 text-sm transition-colors">{t}</a>
+              <a key={t} href="/#" className="text-gray-500 hover:text-gray-300 text-sm transition-colors">{t}</a>
             ))}
           </div>
         </div>

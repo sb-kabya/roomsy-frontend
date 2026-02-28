@@ -12,7 +12,7 @@ const statusConfig = {
 };
 
 export default function MyBookingsPage() {
-  const { user } = useAuth();
+  const { } = useAuth();
   const [bookings, setBookings] = useState([]);
   const [loading, setLoading] = useState(true);
   const [cancelling, setCancelling] = useState(null);
