@@ -12,6 +12,7 @@ const statusConfig = {
 
 export default function MyBookingsPage() {
   const [bookings, setBookings] = useState([]);
+  //deleted
   const [loading, setLoading] = useState(true);
   const [cancelling, setCancelling] = useState(null);
   const [filter, setFilter] = useState('all');
