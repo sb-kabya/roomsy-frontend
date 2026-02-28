@@ -71,7 +71,7 @@ export default function HotelDetailPage() {
       .finally(() => setLoading(false));
   };
 
- useEffect(() => { fetchHotel(); }, [id]);
+  useEffect(() => { fetchHotel(); }, [id]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const submitReview = async (e) => {
     e.preventDefault();
